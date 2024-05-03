@@ -23,6 +23,7 @@ const parsing = async (page) => {
 
     const $coursesList = $(".course_card_item");
 
+    // console.log(1111111, $coursesList.length)
 
     $coursesList.each((idx, node) => {
         // :eq는 제이쿼리 선택자 문법임

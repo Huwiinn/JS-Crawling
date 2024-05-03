@@ -43,7 +43,8 @@ var parsing = function parsing(page) {
           $ = cheerio.load(page); // 읽어들인 강의 목록
 
           courses = [];
-          $coursesList = $(".course_card_item");
+          $coursesList = $(".course_card_item"); // console.log(1111111, $coursesList.length)
+
           $coursesList.each(function (idx, node) {
             // :eq는 제이쿼리 선택자 문법임
             var title = $(node).find(".course_title:eq(0)").text();
